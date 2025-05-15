@@ -1,0 +1,116 @@
+/* Responsive */
+@media screen and (max-width:600px) {
+    /* Home section */
+    .top-nav{
+        background-color:cadetblue;
+        z-index: 9002;
+    }
+
+    .top-nav .container{
+        display: none !important;
+    }
+
+    header .container nav,
+    header .container button:last-child{
+        display: none;
+    }
+
+    header{
+        background-color: #ffffff;
+
+        .container .fa-bars{
+            display: block;
+        }
+    }
+    .Active::before{
+        display: none;
+    }
+    
+
+    main{
+        min-height: calc(100dvh - 300px) !important;
+        position: relative;
+
+        .container .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 5rem;
+    
+            p{
+                text-align: center;
+            }
+    
+            .slogan{
+                color:cadetblue;
+                text-shadow: 0 0 5px rgb(139, 139, 139);
+    
+                &::after{
+                    display: block;
+                }
+            }
+        }
+        .graphic{
+            position: absolute !important;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+
+            img{
+                width: 500px;
+            }
+        }
+        .icons{
+            display: none;
+        }
+    }
+    
+
+    /* About section */
+
+    .section-one{
+        img{
+            width: 100% !important;
+        }
+
+        .container > .content{
+            display: none;
+        }
+
+        .container .mobile-content{
+            display: block;
+        }
+    }
+
+    /* Contact us section */
+
+    .contact-us .contact{
+        flex-direction: column-reverse;
+        row-gap: 20px;
+
+        form{
+            width: 100%;
+        }
+    }
+
+    /* Featured section */
+
+    .scroll-bar > i{
+        display: none;
+    }
+
+    /* Reviews section */
+
+    .Reviews .box{
+        border: none !important;
+    }
+
+    /* -------------- ----------------*/
+    header + .mobile-nav{
+        display: block;
+    }
+
+    /* ----------------- */
+}
