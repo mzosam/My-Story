@@ -1,5 +1,5 @@
 /* Responsive */
-@media screen and (max-width:600px) {
+@media screen and (max-width:375px) {
     /* Home section */
     .top-nav{
         background-color:cadetblue;
