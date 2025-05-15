@@ -1,5 +1,5 @@
-/* Responsive */
-@media (min-width: 360px) and (max-width: 414px) {
+/* For Smaller screens -------------------------------------------------------------------------*/ 
+@media (min-width:320px) and (max-width:360px) {
     /* Home section */
     .top-nav{
         background-color:cadetblue;
@@ -28,7 +28,7 @@
     
 
     main{
-        min-height: calc(100dvh - 300px) !important;
+        min-height: 100dvh;
         position: relative;
 
         .container .content{
@@ -41,6 +41,15 @@
     
             p{
                 text-align: center;
+                width: 100%;
+            }
+            h1{
+                font-size: 3rem;
+            }
+
+            button{
+                padding: 10px 40px;
+                position: relative;
             }
     
             .slogan{
@@ -54,9 +63,10 @@
         }
         .graphic{
             position: absolute !important;
+            width: 400px;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -40%);
+            transform: translate(-50%, -30%);
 
             img{
                 width: 500px;
@@ -100,6 +110,9 @@
     .scroll-bar > i{
         display: none;
     }
+    .scroll-bar .container .card{
+        width: 300px;
+    }
 
     /* Reviews section */
 
@@ -113,4 +126,262 @@
     }
 
     /* ----------------- */
+}
+
+/* For medium Screens --------------------------------------------------------------------------- */
+
+@media (min-width:361px) and (max-width:414px){
+    /* Home section */
+    .top-nav{
+        background-color:cadetblue;
+        z-index: 9002;
+    }
+
+    .top-nav .container{
+        display: none !important;
+    }
+
+    header .container nav,
+    header .container button:last-child{
+        display: none;
+    }
+
+    header{
+        background-color: #ffffff;
+
+        .container .fa-bars{
+            display: block;
+        }
+    }
+    .Active::before{
+        display: none;
+    }
+    
+
+    main{
+        min-height: calc(100dvh - 350px) !important;
+        position: relative;
+       
+        .container .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+    
+            p{
+                text-align: center;
+                width: 100%;
+            }
+            h1{
+                font-size: 4rem;
+            }
+
+            button{
+                padding: 15px 50px;
+                position: relative;
+            }
+    
+            .slogan{
+                color:cadetblue;
+                text-shadow: 0 0 5px rgb(139, 139, 139);
+    
+                &::after{
+                    display: block;
+                }
+            }
+        }
+        .graphic{
+            position: absolute !important;
+            width: 400px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+
+            img{
+                width: 600px;
+            }
+        }
+        .icons{
+            display: none;
+        }
+    }
+    
+
+    /* About section */
+
+    .section-one{
+        img{
+            width: 100% !important;
+        }
+
+        .container > .content{
+            display: none;
+        }
+
+        .container .mobile-content{
+            display: block;
+        }
+    }
+
+    /* Contact us section */
+
+    .contact-us .contact{
+        flex-direction: column-reverse;
+        row-gap: 20px;
+
+        form{
+            width: 100%;
+        }
+    }
+
+    /* Featured section */
+
+    .scroll-bar > i{
+        display: none;
+    }
+    .scroll-bar .container .card{
+        width: 350px;
+    }
+
+    /* Reviews section */
+
+    .Reviews .box{
+        border: none !important;
+    }
+
+    /* -------------- ----------------*/
+    header + .mobile-nav{
+        display: block;
+    }
+
+    /* ----------------- */
+}
+
+/* For regular mobile screen ------------------------------------------------------------------- */
+
+@media (min-width:415px) and (max-width:480px){
+    /* Home section */
+    .top-nav{
+        background-color:cadetblue;
+        z-index: 9002;
+    }
+
+    .top-nav .container{
+        display: none !important;
+    }
+
+    header .container nav,
+    header .container button:last-child{
+        display: none;
+    }
+
+    header{
+        background-color: #ffffff;
+
+        .container .fa-bars{
+            display: block;
+        }
+    }
+    .Active::before{
+        display: none;
+    }
+    
+
+    main{
+        min-height: calc(100dvh - 350px) !important;
+        position: relative;
+        
+        .container .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+    
+            p{
+                text-align: center;
+                width: 100%;
+            }
+            h1{
+                font-size: 4rem;
+            }
+
+            button{
+                padding: 15px 50px;
+                position: relative;
+            }
+    
+            .slogan{
+                color:cadetblue;
+                text-shadow: 0 0 5px rgb(139, 139, 139);
+    
+                &::after{
+                    display: block;
+                }
+            }
+        }
+        .graphic{
+            position: absolute !important;
+            width: 400px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+
+            img{
+                width: 600px;
+            }
+        }
+        .icons{
+            display: none;
+        }
+    }
+    
+
+    /* About section */
+
+    .section-one{
+        img{
+            width: 100% !important;
+        }
+
+        .container > .content{
+            display: none;
+        }
+
+        .container .mobile-content{
+            display: block;
+        }
+    }
+
+    /* Contact us section */
+
+    .contact-us .contact{
+        flex-direction: column-reverse;
+        row-gap: 20px;
+
+        form{
+            width: 100%;
+        }
+    }
+
+    /* Featured section */
+
+    .scroll-bar > i{
+        display: none;
+    }
+    .scroll-bar .container .card{
+        width: 350px;
+    }
+
+    /* Reviews section */
+
+    .Reviews .box{
+        border: none !important;
+    }
+
+    /* -------------- ----------------*/
+    header + .mobile-nav{
+        display: block;
+    }
 }
