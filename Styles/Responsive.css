@@ -1,6 +1,5 @@
 /* For Smaller screens -------------------------------------------------------------------------*/ 
 @media (min-width:320px) and (max-width:360px) {
-    /* Home section */
     .top-nav{
         background-color:cadetblue;
         z-index: 9002;
@@ -17,11 +16,12 @@
 
     header{
         background-color: #ffffff;
-
-        .container .fa-bars{
-            display: block;
-        }
     }
+
+    header .container .fa-bars{
+        display: block;
+    }
+    
     .Active::before{
         display: none;
     }
@@ -30,82 +30,78 @@
     main{
         min-height: 100dvh;
         position: relative;
-
-        .container .content{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            margin-top: 5rem;
-    
-            p{
-                text-align: center;
-                width: 100%;
-            }
-            h1{
-                font-size: 3rem;
-            }
-
-            button{
-                padding: 10px 40px;
-                position: relative;
-            }
-    
-            .slogan{
-                color:cadetblue;
-                text-shadow: 0 0 5px rgb(139, 139, 139);
-    
-                &::after{
-                    display: block;
-                }
-            }
-        }
-        .graphic{
-            position: absolute !important;
-            width: 400px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -30%);
-
-            img{
-                width: 500px;
-            }
-        }
-        .icons{
-            display: none;
-        }
-    }
-    
-
-    /* About section */
-
-    .section-one{
-        img{
-            width: 100% !important;
-        }
-
-        .container > .content{
-            display: none;
-        }
-
-        .container .mobile-content{
-            display: block;
-        }
     }
 
-    /* Contact us section */
+    main .container .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 5rem;
+    }
+    
+    main .container .content p{
+        text-align: center;
+        width: 100%;
+    }
+    main .container .content h1{
+        font-size: 3rem;
+    }
+
+    main .container .content button{
+        padding: 10px 40px;
+        position: relative;
+    }
+    
+    main .container .content .slogan{
+        color:cadetblue;
+        text-shadow: 0 0 5px rgb(139, 139, 139);
+    }
+    
+    main .container .content .slogan::after{
+        display: block;
+    }
+        
+    main .container .graphic{
+        position: absolute;
+        width: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -130%);
+    }
+
+    main .container .content img{
+        width: 500px;
+    }
+    main .container .icons{
+        display: none;
+    }
+
+    .section-one img{
+        width: 100%;
+    }
+
+    .section-one .container{
+        flex-direction: column;
+    }
+
+    .section-one .container > .content{
+        display: none;
+    }
+
+    .section-one .mobile-content{
+        display: block;
+    }
 
     .contact-us .contact{
         flex-direction: column-reverse;
         row-gap: 20px;
-
-        form{
-            width: 100%;
-        }
     }
 
-    /* Featured section */
+    .contact-us .contact form{
+        width: 100%;
+    }
 
     .scroll-bar > i{
         display: none;
@@ -114,24 +110,19 @@
         width: 300px;
     }
 
-    /* Reviews section */
-
     .Reviews .box{
         border: none !important;
     }
 
-    /* -------------- ----------------*/
     header + .mobile-nav{
         display: block;
     }
-
-    /* ----------------- */
 }
 
 /* For medium Screens --------------------------------------------------------------------------- */
 
 @media (min-width:361px) and (max-width:414px){
-    /* Home section */
+
     .top-nav{
         background-color:cadetblue;
         z-index: 9002;
@@ -148,11 +139,12 @@
 
     header{
         background-color: #ffffff;
-
-        .container .fa-bars{
-            display: block;
-        }
     }
+
+    header .container .fa-bars{
+        display: block;
+    }
+    
     .Active::before{
         display: none;
     }
@@ -161,81 +153,77 @@
     main{
         min-height: calc(100dvh - 350px) !important;
         position: relative;
+    }
        
-        .container .content{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-    
-            p{
-                text-align: center;
-                width: 100%;
-            }
-            h1{
-                font-size: 4rem;
-            }
-
-            button{
-                padding: 15px 50px;
-                position: relative;
-            }
-    
-            .slogan{
-                color:cadetblue;
-                text-shadow: 0 0 5px rgb(139, 139, 139);
-    
-                &::after{
-                    display: block;
-                }
-            }
-        }
-        .graphic{
-            position: absolute !important;
-            width: 400px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -30%);
-
-            img{
-                width: 600px;
-            }
-        }
-        .icons{
-            display: none;
-        }
+    main .container .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
     
-
-    /* About section */
-
-    .section-one{
-        img{
-            width: 100% !important;
-        }
-
-        .container > .content{
-            display: none;
-        }
-
-        .container .mobile-content{
-            display: block;
-        }
+    main .container .content p{
+        text-align: center;
+        width: 100%;
+    }
+    main .container .content h1{
+        font-size: 4rem;
     }
 
-    /* Contact us section */
+    main .container .content button{
+        padding: 15px 50px;
+        position: relative;
+    }
+    
+    main .container .slogan{
+        color:cadetblue;
+        text-shadow: 0 0 5px rgb(139, 139, 139);
+    }
+    main .container .slogan::after{
+        display: block;
+    }
+    
+    main .graphic{
+        position: absolute !important;
+        width: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+
+    main .graphic img{
+        width: 600px;
+    }
+    
+    main .container .icons{
+        display: none;
+    }
+
+    .section-one img{
+        width: 100% !important;
+    }
+
+    .section-one .container{
+        flex-direction: column;
+    }
+
+    .section-one .container > .content{
+        display: none;
+    }
+
+    .section-one .container .mobile-content{
+        display: block;
+    }
 
     .contact-us .contact{
         flex-direction: column-reverse;
         row-gap: 20px;
-
-        form{
-            width: 100%;
-        }
     }
 
-    /* Featured section */
+    .contact-us .contact form{
+        width: 100%;
+    }
 
     .scroll-bar > i{
         display: none;
@@ -244,24 +232,18 @@
         width: 350px;
     }
 
-    /* Reviews section */
-
     .Reviews .box{
         border: none !important;
     }
 
-    /* -------------- ----------------*/
     header + .mobile-nav{
         display: block;
     }
-
-    /* ----------------- */
 }
 
 /* For regular mobile screen ------------------------------------------------------------------- */
 
 @media (min-width:415px) and (max-width:480px){
-    /* Home section */
     .top-nav{
         background-color:cadetblue;
         z-index: 9002;
@@ -278,11 +260,12 @@
 
     header{
         background-color: #ffffff;
-
-        .container .fa-bars{
-            display: block;
-        }
     }
+
+    header .container .fa-bars{
+        display: block;
+    }
+    
     .Active::before{
         display: none;
     }
@@ -291,81 +274,77 @@
     main{
         min-height: calc(100dvh - 350px) !important;
         position: relative;
-        
-        .container .content{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-    
-            p{
-                text-align: center;
-                width: 100%;
-            }
-            h1{
-                font-size: 4rem;
-            }
-
-            button{
-                padding: 15px 50px;
-                position: relative;
-            }
-    
-            .slogan{
-                color:cadetblue;
-                text-shadow: 0 0 5px rgb(139, 139, 139);
-    
-                &::after{
-                    display: block;
-                }
-            }
-        }
-        .graphic{
-            position: absolute !important;
-            width: 400px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -30%);
-
-            img{
-                width: 600px;
-            }
-        }
-        .icons{
-            display: none;
-        }
+    }
+       
+    main .container .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
     
-
-    /* About section */
-
-    .section-one{
-        img{
-            width: 100% !important;
-        }
-
-        .container > .content{
-            display: none;
-        }
-
-        .container .mobile-content{
-            display: block;
-        }
+    main .container .content p{
+        text-align: center;
+        width: 100%;
+    }
+    main .container .content h1{
+        font-size: 4rem;
     }
 
-    /* Contact us section */
+    main .container .content button{
+        padding: 15px 50px;
+        position: relative;
+    }
+    
+    main .container .slogan{
+        color:cadetblue;
+        text-shadow: 0 0 5px rgb(139, 139, 139);
+    }
+    main .container .slogan::after{
+        display: block;
+    }
+    
+    main .graphic{
+        position: absolute !important;
+        width: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+
+    main .graphic img{
+        width: 600px;
+    }
+    
+    main .container .icons{
+        display: none;
+    }
+
+    .section-one .container{
+        flex-direction: column;
+    }
+
+    .section-one img{
+        width: 100% !important;
+    }
+
+    .section-one .container > .content{
+        display: none;
+    }
+
+    .section-one .container .mobile-content{
+        display: block;
+    }
 
     .contact-us .contact{
         flex-direction: column-reverse;
         row-gap: 20px;
-
-        form{
-            width: 100%;
-        }
     }
 
-    /* Featured section */
+    .contact-us .contact form{
+        width: 100%;
+    }
 
     .scroll-bar > i{
         display: none;
@@ -374,13 +353,10 @@
         width: 350px;
     }
 
-    /* Reviews section */
-
     .Reviews .box{
         border: none !important;
     }
 
-    /* -------------- ----------------*/
     header + .mobile-nav{
         display: block;
     }
