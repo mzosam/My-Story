@@ -107,7 +107,7 @@
         display: none;
     }
     .scroll-bar .container .card{
-        width: 300px;
+        width: 100%;
     }
 
     .Reviews .box{
@@ -229,7 +229,7 @@
         display: none;
     }
     .scroll-bar .container .card{
-        width: 350px;
+        width: 100%;
     }
  
     .Reviews .box{
@@ -350,7 +350,7 @@
         display: none;
     }
     .scroll-bar .container .card{
-        width: 350px;
+        width: 100%;
     }
 
     .Reviews .box{
