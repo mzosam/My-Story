@@ -30,7 +30,6 @@
     main{
         min-height: 100dvh;
         position: relative;
-        padding: 8%;
     }
 
     main .container .content{
@@ -110,9 +109,6 @@
     .scroll-bar .container .card{
         width: 300px;
     }
-    .Reviews{
-        padding: 8%;
-    }
 
     .Reviews .box{
         border: none !important;
@@ -157,7 +153,6 @@
     main{
         min-height: calc(100dvh - 350px) !important;
         position: relative;
-        padding: 8%;
     }
        
     main .container .content{
@@ -208,10 +203,6 @@
     .section-one img{
         width: 100% !important;
     }
-    
-    .section-one{
-        padding: 8%;
-    }
 
     .section-one .container{
         flex-direction: column;
@@ -239,10 +230,6 @@
     }
     .scroll-bar .container .card{
         width: 350px;
-    }
-    
-    .Reviews{
-        padding: 8%;
     }
  
     .Reviews .box{
@@ -287,7 +274,6 @@
     main{
         min-height: calc(100dvh - 350px) !important;
         position: relative;
-        padding: 8%;
     }
        
     main .container .content{
@@ -334,10 +320,6 @@
     main .container .icons{
         display: none;
     }
-    
-    .section-one{
-        padding: 8%;
-    }
 
     .section-one .container{
         flex-direction: column;
@@ -369,10 +351,6 @@
     }
     .scroll-bar .container .card{
         width: 350px;
-    }
-    
-    .Reviews{
-        padding: 8%;
     }
 
     .Reviews .box{
