@@ -1,6 +1,6 @@
 @import url(Responsive.css);
 @import url(../Styles/bootstrap-5.3.3-dist/css/bootstrap.min.css);
-@import url(../Styles/fontawesome-free-6.7.2-web/css/all.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
 
 :root{
     --Accent: rgba(95, 158, 160);
