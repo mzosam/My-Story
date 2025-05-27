@@ -49,8 +49,7 @@
     }
 
     main .container .content button{
-        padding: 10px 40px;
-        position: relative;
+        padding: 0;
     }
     
     main .container .content .slogan{
@@ -186,8 +185,7 @@
     }
 
     main .container .content button{
-        padding: 15px 50px;
-        position: relative;
+        padding: 0;
     }
     
     main .container .slogan{
@@ -322,8 +320,7 @@
     }
 
     main .container .content button{
-        padding: 15px 50px;
-        position: relative;
+        padding: 0;
     }
     
     main .container .slogan{
@@ -459,8 +456,7 @@
     }
 
     main .container .content button{
-        padding: 15px 50px;
-        position: relative;
+        padding: 0;
     }
     
     main .container .slogan{
