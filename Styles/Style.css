@@ -19,6 +19,9 @@ body{
     overflow-x: hidden;
     background-color: white !important;
 }
+i{
+    color:#000;
+}
 
 .top-nav a{
     text-decoration: none;
