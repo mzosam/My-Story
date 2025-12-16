@@ -1,0 +1,562 @@
+/* For Smaller screens -------------------------------------------------------------------------*/ 
+@media (min-width:320px) and (max-width:360px) {
+    .top-nav{
+        position: fixed !important;
+    }
+
+    .top-nav .container{
+        display: none !important;
+    }
+
+    header .container nav,
+    header .container button:last-child{
+        display: none;
+    }
+
+    header{
+        background-color: #ffffff;
+    }
+
+    header .container .fa-bars{
+        display: block;
+    }
+    
+    .Active::before{
+        display: none;
+    }
+    
+
+    main{
+        min-height: 100dvh;
+        position: relative;
+    }
+
+    main .container .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 5rem;
+    }
+    
+    main .container .content p{
+        text-align: center;
+        width: 100%;
+    }
+    main .container .content h1{
+        font-size: 3rem;
+    }
+
+    main .container .content button{
+        padding: 0;
+    }
+
+    main .container .content .slogan{
+        color:cadetblue;
+        text-shadow: 0 0 5px rgb(139, 139, 139);
+    }
+    
+    main .container .content .slogan::after{
+        display: block;
+    }
+        
+    main .container .graphic{
+        position: absolute;
+        width: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -130%);
+    }
+
+    main .container .content img{
+        width: 500px;
+    }
+    main .container .icons{
+        display: none;
+    }
+
+    .section-one img{
+        width: 100%;
+    }
+
+    .section-one .container{
+        flex-direction: column;
+    }
+
+    .section-one .container > .content{
+        display: none;
+    }
+
+    .section-one .mobile-content{
+        display: block;
+    }
+
+    .contact-us .contact{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .contact-us .contact form{
+        width: 100%;
+    }
+
+    .scroll-bar > i{
+        display: none;
+    }
+    .scroll-bar .container .card{
+        width: 300px;
+    }
+
+    .Reviews .box{
+        border: none !important;
+    }
+
+    header + .mobile-nav{
+        display: block;
+    }
+
+    .booking input{
+        width: 100%;
+    }
+
+    .booking select{
+        width: 100%;
+    }
+
+    .booking input{
+        width: 100%;
+    }
+
+    .booking form .banner img{
+        display: none;
+    }
+
+    form:nth-child(1){
+	width:100%;
+    }
+
+    .blog-post .blog-content img{
+        display: none;
+    }
+
+}
+
+/* For medium Screens --------------------------------------------------------------------------- */
+
+@media (min-width:361px) and (max-width:414px){
+
+     .top-nav{
+        position: fixed !important;
+    }
+
+    .top-nav .container{
+        display: none !important;
+    }
+
+    header .container nav,
+    header .container button:last-child{
+        display: none;
+    }
+
+    header{
+        background-color: #ffffff;
+    }
+
+    header .container .fa-bars{
+        display: block;
+    }
+    
+    .Active::before{
+        display: none;
+    }
+    
+
+    main{
+        min-height: calc(100dvh - 350px) !important;
+        position: relative;
+    }
+       
+    main .container .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    main .container .content p{
+        text-align: center;
+        width: 100%;
+    }
+    main .container .content h1{
+        font-size: 4rem;
+    }
+
+    main .container .content button{
+        padding: 0;
+    }
+    
+    main .container .slogan{
+        color:cadetblue;
+        text-shadow: 0 0 5px rgb(139, 139, 139);
+    }
+    main .container .slogan::after{
+        display: block;
+    }
+    
+    main .graphic{
+        position: absolute !important;
+        width: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+
+    main .graphic img{
+        width: 600px;
+    }
+    
+    main .container .icons{
+        display: none;
+    }
+
+    .section-one img{
+        width: 100% !important;
+    }
+
+    .section-one .container{
+        flex-direction: column;
+    }
+
+    .section-one .container > .content{
+        display: none;
+    }
+
+    .section-one .container .mobile-content{
+        display: block;
+    }
+
+    .contact-us .contact{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .contact-us .contact form{
+        width: 100%;
+    }
+
+    .scroll-bar > i{
+        display: none;
+    }
+    .scroll-bar .container .card{
+        width: 350px;
+    }
+
+    .Reviews .box{
+        border: none !important;
+    }
+
+    header + .mobile-nav{
+        display: block;
+    }
+
+    .booking input{
+        width: 100%;
+    }
+
+    .booking select{
+        width: 100%;
+    }
+
+    .booking .banner img{
+        display: none;
+    }
+
+    .booking form input{
+        width: 100%;
+    }
+
+    form:nth-child(1){
+	width:100%;
+    }
+
+    .blog-post .blog-content img{
+        display: none;
+    }
+}
+
+/* For regular mobile screen ------------------------------------------------------------------- */
+
+@media (min-width:415px) and (max-width:480px){
+     .top-nav{
+        position: fixed !important;
+    }
+
+    .top-nav .container{
+        display: none !important;
+    }
+
+    header .container nav,
+    header .container button:last-child{
+        display: none;
+    }
+
+    header{
+        background-color: #ffffff;
+    }
+
+    header .container .fa-bars{
+        display: block;
+    }
+    
+    .Active::before{
+        display: none;
+    }
+    
+
+    main{
+        min-height: calc(100dvh - 350px) !important;
+        position: relative;
+    }
+       
+    main .container .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    main .container .content p{
+        text-align: center;
+        width: 100%;
+    }
+    main .container .content h1{
+        font-size: 4rem;
+    }
+
+    main .container .content button{
+        padding: 0;
+    }
+    
+    main .container .slogan{
+        color:cadetblue;
+        text-shadow: 0 0 5px rgb(139, 139, 139);
+    }
+    main .container .slogan::after{
+        display: block;
+    }
+    
+    main .graphic{
+        position: absolute !important;
+        width: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+
+    main .graphic img{
+        width: 600px;
+    }
+    
+    main .container .icons{
+        display: none;
+    }
+
+    .section-one .container{
+        flex-direction: column;
+    }
+
+    .section-one img{
+        width: 100% !important;
+    }
+
+    .section-one .container > .content{
+        display: none;
+    }
+
+    .section-one .container .mobile-content{
+        display: block;
+    }
+
+    .contact-us .contact{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .contact-us .contact form{
+        width: 100%;
+    }
+
+    .scroll-bar > i{
+        display: none;
+    }
+    .scroll-bar .container .card{
+        width: 350px;
+    }
+
+    .Reviews .box{
+        border: none !important;
+    }
+
+    header + .mobile-nav{
+        display: block;
+    }
+
+    .booking input{
+        width: 100%;
+    }
+
+    .booking select{
+        width: 100%;
+    }
+
+    .booking .banner img{
+        display: none;
+    }
+
+    .booking form input{
+        width: 100%;
+    }
+
+    form:nth-child(1){
+	width:100%;
+    }
+
+    .blog-post .blog-content img{
+        display: none;
+    }
+}
+
+/* Tablet screen ------------------------------------------------------------------------------ */
+
+@media (min-width:768px) and (max-width:1023px){
+    .top-nav{
+        background-color:cadetblue;
+        z-index: 9002;
+    }
+
+    .top-nav .container{
+        display: none !important;
+    }
+
+    header .container nav,
+    header .container button:last-child{
+        display: none;
+    }
+
+    header{
+        background-color: #ffffff;
+    }
+
+    header .container .fa-bars{
+        display: block;
+    }
+    
+    .Active::before{
+        display: none;
+    }
+    
+
+    main{
+        min-height: calc(100dvh - 550px) !important;
+        position: relative;
+    }
+       
+    main .container .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    main .container .content p{
+        text-align: center;
+        width: 100%;
+    }
+    main .container .content h1{
+        font-size: 4rem;
+    }
+
+    main .container .content button{
+        padding: 0;
+    }
+    
+    main .container .slogan{
+        color:cadetblue;
+        text-shadow: 0 0 5px rgb(139, 139, 139);
+    }
+    main .container .slogan::after{
+        display: block;
+    }
+    
+    main .graphic{
+        position: absolute !important;
+        width: 700px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+
+    main .graphic img{
+        width: 600px;
+    }
+    
+    main .container .icons{
+        display: none;
+    }
+
+    .section-one .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-one .container > .content{
+        display: none;
+    }
+
+    .section-one .container .mobile-content{
+        display: block;
+    }
+
+    .contact-us .contact{
+        flex-direction: column-reverse;
+        row-gap: 20px;
+    }
+
+    .contact-us .contact form{
+        width: 100%;
+    }
+    
+    .scroll-bar .container .card{
+        width: 350px;
+    }
+
+    .Reviews .box{
+        border: none !important;
+    }
+
+    header + .mobile-nav{
+        display: block;
+    }
+
+    .booking input{
+        width: 100%;
+    }
+
+    .booking select{
+        width: 100%;
+    }
+    .booking .banner img{
+        display: none;
+    }
+    .booking form input{
+        width: 100%;
+    }
+
+    form:nth-child(1){
+	width:100%;
+    }
+}

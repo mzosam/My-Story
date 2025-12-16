@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="../Styles/Style.css">
+    <script src="../Scripts/main.js" defer></script>
+
+    <style>
+        :root{
+            --color: rgba(95, 158, 160);
+        }
+
+        .booking{
+            margin-top: min(3em,5%);
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .booking h1{
+            font-family: Edwardian Script ITC;
+            font-weight: bold;
+            font-size: 3rem;
+            color: black;
+            text-shadow: 0 0 5px black;
+        }
+        .booking input{
+            width: 90%;
+            border-color: rgb(151, 151, 151);
+        }
+        input::placeholder{
+            font-weight: lighter;
+        }
+        .booking input[type = submit]{
+            background-color: var(--color);
+            color: #02020233;
+            font-weight: bold;
+        }
+        .booking input[type = submit]:active{
+            background-color: var(--color);
+        }
+        select{
+            padding: .52em;
+            border: 1px solid rgb(151, 151, 151);
+            outline: none;
+            width: 90%;
+            border-radius: 3px;
+            background-color: transparent;
+            border-top: 0;
+        }
+        .Active{
+            color: var(--color);
+        }
+
+        i{
+            color: var(--color);
+        }
+
+        #whatsapp i{
+            color: green;
+        }
+
+        .group span{
+            color: var(--color);
+        }
+
+        .contact-us .header::after{
+            content: '';
+            position: absolute;
+            width: 40%;
+            height: 2px;
+            bottom: 25px;
+            left: 0;
+            background-color: var(--color);
+        }
+
+       .button{
+        background-color: transparent !important;
+        border: 2px solid var(--color) !important;
+       }
+
+       .contact-us .contact form input[type = submit]{
+        background-color: var(--color);
+       }
+
+       footer button{
+        background-color:#fff ;
+       }
+       .banner img{
+        width: 350px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+       }
+       .banner img:first-child{
+        width: 400px;
+        height: 400px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        border-right: 8px solid #fff;
+        border-top: 8px solid #fff;
+        transform: translate(-40%,-20%);
+       }
+
+       form:nth-child(2){
+        border-radius:20px;
+        background-color: #e6e9ef;
+        box-shadow:inset -12px -12px 30px 5px rgba(255,255,255,0.9),inset 12px 12px 30px 5px rgba(50,58,72,0.2);
+	    }
+    </style>
+</head>
+<body>
+
+     <a href="https://wa.me/+27691208947">
+        <i id="whatsapp" class="fa-brands fa-square-whatsapp"></i>
+    </a>
+
+    <div class="Loading">
+        <span></span>
+    </div>
+
+    <div class="navbar navbar-expand top-nav">
+        <div class="container p-3">
+            <div class="links">
+                <a href="#About">About</a>
+                <a href="#Featured">Featured</a>
+                <a href="#Contacts">Contacts</a>
+                <a href="#Reviews">Reviews</a>
+            </div>
+    
+            <div class="contact">
+                <span><i class="fa-solid fa-phone"></i> +27 69 120 8947</span>
+                <span><i class="fa-solid fa-envelope"></i> support@youmail.com</span>
+            </div>
+        </div>
+    </div>
+    <header class="navbar navbar-expand-md">
+        <div class="container">
+            <i class="fa fa-bars"></i>
+            <div>
+                <img src="../Images/gallery/IMG_7652.JPG" alt="">
+            </div> 
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="./Services.html">Services</a>
+                <a href="./Gallery.html">Gallery</a>
+                <a href="#">Blog</a>
+            </nav>
+            <div>
+                <button class="mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="button" class="Active">Book Now</button>
+            </div>  
+        </div>
+    </header>
+
+    <!-- ---------------------------------------------------------- -->
+    <div class="mobile-nav">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./Services.html">Services</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Blog</a>
+            <a href="./Gallery.html">Gallery</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-solid fa-location-crosshairs"></i>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------- -->
+
+    <section class="container booking">
+        <form action="">
+            <h1>Book Now!</h1>
+            <input type="text" name="Name" placeholder="First Name">
+            <input type="text" name="lastName" placeholder="Last Name">
+            <input type="date" name="date" placeholder="Schedule">
+            <input type="number" name="phoneNumber" placeholder="Phone">
+            <input type="email" name="email" placeholder="Email">
+            <select name="Occasion" id="">
+                <option value="">No Selection</option>
+                <option value="">Wedding</option>
+                <option value="">Birthday party</option>
+                <option value="">Graduation</option>
+                <option value="">Honeymoon</option>
+                <option value="">Brand</option>
+            </select>
+            <input type="submit" value="SEND">
+        </form>
+        <div class="banner">
+            <img src="../Images/gallery/3.jpg" alt="">
+            <img src="../Images/gallery/7.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------------- -->
+    <section class="contact-us">
+        <div class="container">
+            <div class="header">
+                <h2>Contact Us</h2>
+                <small>Get in touch with us through call or messaging.</small>
+            </div>
+
+            <div class="contact">
+                <div class="phone">
+                    <div class="group">
+                        <button><i class="fa-solid fa-location-crosshairs"></i></button>
+
+                        <div>
+                            <span>Address</span> <br>
+                            <small>
+                                111 Palmiet road <br>
+                                Clare Estate <br>
+                                4091
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <button><i class="fa-solid fa-phone"></i></i></button>
+
+                        <div>
+                            <span>Phone</span> <br>
+                            <small>+27 69 120 8947</small>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <button><i class="fa-solid fa-envelope"></i></button>
+
+                        <div>
+                            <span>Email</span> <br>
+                            <small>business@gmail.com</small>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="icons">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-pinterest-p"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3461.433038192953!2d30.969391975586618!3d-29.82291987503586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef700c48cd837b3%3A0x9da502c4e70d4871!2s175%20Constantine%20Rd%2C%20Clare%20Hills%2C%20Durban%2C%204091!5e0!3m2!1sen!2sza!4v1765887555532!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="p-3">
+        <span></span>
+        <small>&copy;2025 All right reserved!</small>
+        <a href="#"><button><i class="fa fa-arrow-up"></i></button></a>
+    </footer>
+</body>
+</html>
