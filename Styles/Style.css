@@ -149,12 +149,6 @@ nav a {
     object-fit: cover;
 }
 
-
-/* HERO PARAGRAPH
-   Hidden on desktop.
-   Only displayed on mobile.
-*/
-
 .hero > p {
     display: none;
 }
@@ -316,7 +310,7 @@ nav a {
 }
 
 .gallery {
-    background: #000000;
+    background: #d3d1d1;
     padding: 120px 0;
 }
 
