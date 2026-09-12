@@ -1,0 +1,787 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+}
+
+nav {
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    padding: 35px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    letter-spacing: 8px;
+    color: #000000 !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: #000000;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: #000000 !important;
+    font-size: 0.90em !important;
+}
+
+.menu .inquire {
+    border: 1px solid #000000 !important;
+    padding: 10px 18px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 2px;
+    background: #000000 !important;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+
+/* HAMBURGER → X */
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.tag {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #967857;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Gap between navigation and slider */
+    margin-top: 35px;
+
+    gap: 20px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-track {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    gap: 0;
+
+    animation: none;
+    transform: none;
+}
+
+.slide {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* HERO PARAGRAPH
+   Hidden on desktop.
+   Only displayed on mobile.
+*/
+
+.hero > p {
+    display: none;
+}
+
+
+/* HERO HEADING */
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 95px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+@keyframes slideShowMobile {
+
+    0%,
+    12% {
+        transform: translateX(0);
+    }
+
+    16%,
+    28% {
+        transform: translateX(-100vw);
+    }
+
+    32%,
+    44% {
+        transform: translateX(-200vw);
+    }
+
+    48%,
+    60% {
+        transform: translateX(-300vw);
+    }
+
+    64%,
+    76% {
+        transform: translateX(-400vw);
+    }
+
+    80%,
+    92% {
+        transform: translateX(-500vw);
+    }
+
+    96% {
+        transform: translateX(-500vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.story {
+    padding: 120px 0;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.story img {
+    width: 100%;
+}
+
+.story h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.story p {
+    line-height: 2;
+    color: #666;
+}
+
+.photographer {
+    background: #16120e;
+    color: white;
+    padding: 120px 0;
+}
+
+.photographer-grid {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.photographer img {
+    width: 100%;
+}
+
+.photographer h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.photographer p {
+    line-height: 2;
+    color: #d8d8d8;
+}
+
+.experience {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.experience h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.card {
+    padding: 50px;
+    border: 1px solid #ddd;
+}
+
+.card h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 20px 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.card > i {
+    color: #927758;
+    font-size: 30px;
+}
+
+.card p {
+    color: #666;
+}
+
+.gallery {
+    background: #000000;
+    padding: 120px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.testimonial {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.3;
+}
+
+.author {
+    margin-top: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.cta {
+    height: 70vh;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)),
+        url('../images/7.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.cta h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 18px 40px;
+    border: 1px solid white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.button > i {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.contact-section {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-image {
+    background:
+        linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)),
+        url('../images/19.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 80px;
+    color: white;
+}
+
+.contact-image-content h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.contact-image-content p {
+    max-width: 500px;
+    line-height: 1.8;
+}
+
+.contact-form-wrapper {
+    padding: 100px 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 550px;
+}
+
+.contact-form h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 58px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.contact-form p {
+    line-height: 1.9;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 18px;
+
+    border: 1px solid #ddd;
+    background: white;
+
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 180px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #927758;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 18px;
+
+    background: #927758;
+    color: white;
+
+    border: none;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit-btn:hover {
+    background: #7d6548;
+}
+
+.contact-details {
+    margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-box {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.contact-box h4 {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #927758;
+    font-weight: 500;
+}
+
+.contact-box p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+    background: #111;
+    color: #aaa;
+}
+
+@media (max-width: 900px) {
+
+    nav {
+        padding: 25px 0;
+    }
+
+    .nav-container {
+        min-height: 50px;
+        justify-content: center;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        font-size: 28px;
+        letter-spacing: 4px;
+
+        white-space: nowrap;
+    }
+
+    .hamburger {
+        display: flex;
+
+        position: absolute;
+        right: 20px;
+        top: 50%;
+
+        transform: translateY(-50%);
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #fffdfd;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu a {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px dotted rgb(109, 109, 109);
+    }
+
+    .menu .inquire {
+        width: auto;
+        padding: 10px 80px;
+        margin-top: 8px;
+    }
+
+    .hero {
+        min-height: auto;
+        height: auto;
+        margin-top: 25px;
+        padding: 0 0 50px;
+    }
+
+    .slide-track {
+        display: flex;
+        width: max-content;
+        animation: slideShowMobile 30s linear infinite;
+    }
+
+    .slide {
+        width: 100vw;
+        height: 400px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero > p {
+        display: block;
+        max-width: 100%;
+        padding: 20px 20px 0;
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+
+    .hero h1 {
+        font-size: 60px;
+        line-height: 1.1;
+    }
+
+    .story {
+        padding: 80px 0;
+    }
+
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .story h2 {
+        font-size: 42px;
+    }
+
+    .photographer {
+        padding: 80px 0;
+    }
+
+    .photographer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .photographer h2 {
+        font-size: 42px;
+    }
+
+    .experience {
+        padding: 80px 0;
+    }
+
+    .experience h2 {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 35px 25px;
+    }
+
+    .card h3 {
+        font-size: 13px !important;
+    }
+
+    .gallery {
+        padding: 80px 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid img {
+        height: 300px;
+    }
+
+    .testimonial {
+        padding: 80px 0;
+    }
+
+    .quote {
+        font-size: 34px;
+    }
+
+    .cta {
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .cta h2 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    a.button {
+        padding: 16px 30px;
+        color: #ffffff;
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-image {
+        min-height: 450px;
+        padding: 40px;
+    }
+
+    .contact-image-content h1 {
+        font-size: 52px;
+    }
+
+    .contact-form-wrapper {
+        padding: 80px 25px;
+    }
+
+    .contact-form h2 {
+        font-size: 42px;
+    }
+
+    .contact-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero {
+        margin-top: 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero > p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .story h2,
+    .photographer h2,
+    .experience h2 {
+        font-size: 34px;
+    }
+
+    .quote {
+        font-size: 28px;
+    }
+
+    .cta h2 {
+        font-size: 32px;
+    }
+
+    .card h3 {
+        font-size: 13px !important;
+    }
+
+    .contact-image {
+        display: none !important;
+    }
+}
