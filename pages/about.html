@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background:#f8f5f2;
+    color:#222;
+    font-family:'Inter',sans-serif;
+}
+
+img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.navbar{
+    position:absolute;
+    top:40px;
+    left:80px;
+    right:80px;
+    z-index:10;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    letter-spacing:3px;
+    font-size:14px;
+}
+
+nav{
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+
+nav a{
+    text-decoration:none;
+    color:#222;
+    text-transform:uppercase;
+    font-size:13px;
+}
+
+.menu{
+    font-size:22px;
+}
+
+.hero{
+    display:grid;
+    grid-template-columns:45% 55%;
+    min-height:900px;
+}
+
+.hero-content{
+    padding:180px 80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size: 5em;
+    font-weight:400;
+    letter-spacing:2px;
+}
+
+.line{
+    width:70px;
+    height:1px;
+    background:#c5a67a;
+    margin:30px 0;
+}
+
+.subtitle{
+    color:#b28b5b;
+    letter-spacing:4px;
+    line-height:2;
+    font-size:15px;
+    margin-bottom:40px;
+}
+
+.body{
+    max-width:420px;
+    line-height:2;
+    color:#444;
+}
+
+.story-section{
+    display:grid;
+    grid-template-columns:50% 50%;
+}
+
+.story-text{
+    background:#070707;
+    color:white;
+    padding:100px 80px;
+}
+
+.section-label{
+    color:#b28b5b;
+    letter-spacing:4px;
+    font-size:13px;
+}
+
+.story-text h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:72px;
+    font-weight:400;
+    margin:30px 0;
+}
+
+.story-text p{
+    color:#d5d5d5;
+    line-height:2;
+    max-width:500px;
+}
+
+.story-text a{
+    display:inline-block;
+    margin-top:40px;
+    color:#c5a67a;
+    text-decoration:none;
+    letter-spacing:2px;
+}
+
+.values{
+    padding:120px 80px;
+    text-align:center;
+}
+
+.center{
+    display:block;
+}
+
+.center-line{
+    margin:20px auto 70px;
+}
+
+.values-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:60px;
+}
+
+.values-grid h4{
+    font-family:'Cormorant Garamond',serif;
+    font-size:30px;
+    margin-bottom:20px;
+    font-weight:400;
+}
+
+.values-grid p{
+    line-height:1.8;
+    color:#666;
+}
+
+.commitment{
+    display:grid;
+    grid-template-columns:50% 50%;
+}
+
+.commitment-text{
+    padding:100px 80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.commitment-text h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:72px;
+    font-weight:400;
+    margin:30px 0;
+}
+
+.commitment-text p{
+    line-height:2;
+    color:#444;
+    max-width:500px;
+}
+
+.signature{
+    margin-top:40px;
+    font-family:cursive;
+    font-size:48px;
+    color:#b28b5b;
+}
+
+footer{
+    background:#070707;
+    color:#c5a67a;
+    text-align:center;
+    padding:30px;
+    letter-spacing:4px;
+    font-size:13px;
+}
+
+@media(max-width:900px){
+
+    .hero,
+    .story-section,
+    .commitment{
+        grid-template-columns:1fr;
+    }
+
+    .values-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .hero h1,
+    .story-text h2,
+    .commitment-text h2{
+        font-size:60px;
+    }
+}
+
+@media(max-width:768px){
+
+    .values-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero-content,
+    .story-text,
+    .commitment-text{
+        padding:60px 30px;
+    }
+
+    .navbar{
+        left:30px;
+        right:30px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">ABOUT US</div>
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+        <h1>MY STORY</h1>
+
+        <div class="line"></div>
+
+        <p class="subtitle">
+            CRAFTED WITH PASSION.<br>
+            DESIGNED FOR EXCELLENCE.
+        </p>
+
+        <p class="body">
+            We are luxury storytellers dedicated to documenting authentic,
+            emotional and timeless moments. Every image reflects our commitment
+            to artistry, connection and beautiful storytelling.
+        </p>
+    </div>
+
+    <div class="hero-image">
+        <img src="images/4.jpeg" alt="">
+    </div>
+
+</section>
+
+<section class="story-section">
+
+    <div class="story-text">
+
+        <span class="section-label">OUR STORY</span>
+
+        <div class="line gold"></div>
+
+        <h2>
+            BUILT ON VALUES.<br>
+            DRIVEN BY VISION.
+        </h2>
+
+        <p>
+            We believe photography should feel honest, cinematic and deeply
+            personal. Our work is rooted in connection, emotion and timeless
+            imagery that will be treasured for generations.
+        </p>
+
+        <a href="#">OUR JOURNEY →</a>
+
+    </div>
+
+    <div class="story-image">
+        <img src="images/2.jpeg" alt="">
+    </div>
+
+</section>
+
+<section class="values">
+
+    <span class="section-label center">OUR VALUES</span>
+
+    <div class="line center-line"></div>
+
+    <div class="values-grid">
+
+        <div>
+            <h4>QUALITY</h4>
+            <p>Luxury imagery crafted with precision and intention.</p>
+        </div>
+
+        <div>
+            <h4>CRAFTSMANSHIP</h4>
+            <p>Every photograph is carefully refined and curated.</p>
+        </div>
+
+        <div>
+            <h4>TIMELESS DESIGN</h4>
+            <p>Elegant editing that remains beautiful for decades.</p>
+        </div>
+
+        <div>
+            <h4>CLIENT EXPERIENCE</h4>
+            <p>An effortless and memorable experience from start to finish.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="commitment">
+
+    <div class="detail-image">
+        <img src="images/1.png" alt="">
+    </div>
+
+    <div class="commitment-text">
+
+        <span class="section-label">OUR COMMITMENT</span>
+
+        <div class="line gold"></div>
+
+        <h2>EXCELLENCE IN<br>EVERY DETAIL.</h2>
+
+        <p>
+            We are committed to creating meaningful imagery and unforgettable
+            experiences. Every frame is captured with purpose and artistry.
+        </p>
+
+        <div class="signature">The Team</div>
+
+    </div>
+
+</section>
+
+<footer>
+    THANK YOU FOR BEING PART OF OUR STORY.
+</footer>
+
+</body>
+</html>
