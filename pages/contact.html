@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | My Story Photography</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        }
+
+        body{
+        font-family:'Montserrat',sans-serif;
+        background:#f7f5f1;
+        color:#222;
+        }
+
+        .container{
+        width:100%;
+        padding:0 20px;
+        }
+
+        /* CONTACT */
+
+        .contact-section{
+        min-height:100vh;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        }
+
+        .contact-image{
+        background:
+        linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
+        url('images/1.png');
+        background-size:cover;
+        background-position:center;
+        display:flex;
+        align-items:flex-end;
+        padding:80px;
+        color:white;
+        }
+
+        .contact-image-content h1{
+        font-family:'Cormorant Garamond',serif;
+        font-size:80px;
+        font-weight:400;
+        line-height:1;
+        margin-bottom:20px;
+        }
+
+        .contact-image-content p{
+        max-width:500px;
+        line-height:1.8;
+        }
+
+        .contact-form-wrapper{
+        padding:100px 80px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        }
+
+        .contact-form{
+        width:100%;
+        max-width:550px;
+        }
+
+        .tag{
+        font-size:12px;
+        letter-spacing:4px;
+        text-transform:uppercase;
+        color:#927758;
+        margin-bottom:15px;
+        }
+
+        .contact-form h2{
+        font-family:'Cormorant Garamond',serif;
+        font-size:58px;
+        font-weight:400;
+        margin-bottom:20px;
+        }
+
+        .contact-form p{
+        line-height:1.9;
+        color:#666;
+        margin-bottom:40px;
+        }
+
+        .form-group{
+        margin-bottom:20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea{
+        width:100%;
+        padding:18px;
+        border:1px solid #ddd;
+        background:white;
+        font-family:'Montserrat',sans-serif;
+        outline:none;
+        }
+
+        .contact-form textarea{
+        resize:none;
+        height:180px;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus{
+        border-color:#927758;
+        }
+
+        .submit-btn{
+        width:100%;
+        padding:18px;
+        background:#927758;
+        color:white;
+        border:none;
+        letter-spacing:2px;
+        text-transform:uppercase;
+        cursor:pointer;
+        transition:.3s;
+        }
+
+        .submit-btn:hover{
+        background:#7d6548;
+        }
+
+        .contact-details{
+        margin-top:50px;
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:20px;
+        }
+
+        .contact-box{
+        border-top:1px solid #ddd;
+        padding-top:15px;
+        }
+
+        .contact-box h4{
+        font-size:11px;
+        letter-spacing:3px;
+        text-transform:uppercase;
+        margin-bottom:10px;
+        color:#927758;
+        font-weight:500;
+        }
+
+        .contact-box p{
+        margin:0;
+        font-size:14px;
+        color:#666;
+        }
+
+        /* MOBILE */
+
+        @media(max-width:900px){
+
+            .contact-section{
+            grid-template-columns:1fr;
+            }
+
+            .contact-image{
+            min-height:450px;
+            padding:40px;
+            }
+
+            .contact-image-content h1{
+            font-size:52px;
+            }
+
+            .contact-form-wrapper{
+            padding:80px 25px;
+            }
+
+            .contact-form h2{
+            font-size:42px;
+            }
+
+            .contact-details{
+            grid-template-columns:1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <section class="contact-section">
+        <div class="contact-image">
+            <div class="contact-image-content">
+                <div class="tag">New Memories(pending)</div>
+
+                <h1>Let's Create Something Beautiful.</h1>
+
+                <p>
+                Every celebration has a story worth preserving.
+                We would love to hear about your vision and learn
+                how we can capture it beautifully.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="contact-form-wrapper">
+
+            <form class="contact-form">
+
+                <div class="tag">GET IN TOUCH</div>
+
+                <h2>Begin Your Story.</h2>
+
+                <p>
+                Fill out the form below and we'll get back to you
+                within 24–48 hours.
+                </p>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name">
+                </div>
+
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Wedding / Session Date">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Venue Location">
+                </div>
+
+                <div class="form-group">
+                    <textarea placeholder="Tell us about your plans..."></textarea>
+                </div>
+
+                <button class="submit-btn">
+                    Send Inquiry
+                </button>
+
+                <div class="contact-details">
+
+                    <div class="contact-box">
+                        <h4>Email</h4>
+                        <p>hello@mystoryphoto.com</p>
+                    </div>
+
+                    <div class="contact-box">
+                        <h4>Phone</h4>
+                        <p>+27 69 120 8947</p>
+                    </div>
+
+                    <div class="contact-box">
+                        <h4>Location</h4>
+                        <p>Durban, South Africa</p>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+
+</body>
+</html>
